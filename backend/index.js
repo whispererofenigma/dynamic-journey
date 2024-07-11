@@ -15,7 +15,12 @@ const dbConfig = {
 };*/
 
 // Serve static files (HTML, CSS, JS, images) from the frontend directory
-app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, 'frontend', 'public', 'styles')));
+
+//Explicitly serving the stylesheet
+app.get('/style', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'public', 'styles', 'tailwind.css'));
+});
 
 // Handle clean URLs by serving specific HTML files
 app.get('/', (req, res) => {
