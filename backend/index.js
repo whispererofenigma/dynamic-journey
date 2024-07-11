@@ -15,7 +15,7 @@ const dbConfig = {
 };*/
 
 // Serve static files (HTML, CSS, JS, images) from the frontend directory
-app.use(express.static(path.join(__dirname, 'frontend', 'public', 'styles')));
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 //Explicitly serving the stylesheet
 app.get('/style', (req, res) => {
