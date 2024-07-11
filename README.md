@@ -15,5 +15,5 @@ Welcome to the Dynamic Journey Portfolio Template, a customizable portfolio webs
 1. **Clone the repository** to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/dynamic-journey.git
+   git clone https://github.com/whispererofenigma/dynamic-journey.git
    cd dynamic-journey
