@@ -116,4 +116,41 @@
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-element-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-element-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-animate-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+.scroll-element-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-animateup-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
 

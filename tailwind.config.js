@@ -5,7 +5,13 @@ module.exports = {
     './frontend/**/*.js', 
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'blog': "url('/frontend/public/images/blog.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      
+    },
   },
   plugins: [],
 }

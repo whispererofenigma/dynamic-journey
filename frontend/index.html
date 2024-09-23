@@ -13,17 +13,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <!-- Include any additional stylesheets or scripts here -->
-    
+   
+
+    <style>
+        .aos-fade {
+            transform: translateZ(0);
+            /* This forces the browser to use GPU */
+        }
+    </style>
+
+
+
+
+
 </head>
 
 <body class="h-screen bg-gradient-to-r from-[#000000] to-[#414141]">
-    <video src="./public/images/abstractBg.mp4" class="fixed w-screen h-screen object-cover sepia" autoplay loop muted ></video>
+    <video src="./public/images/abstractBg.mp4" class="fixed w-screen h-screen object-cover sepia" autoplay loop
+        muted></video>
     <div id="overlay" class="fixed h-screen inset-0 bg-transparent bg-opacity-50 z-1 backdrop-blur-lg"></div>
     <header>
-        <nav
-            class="relative px-4 py-4 m-2 flex justify-between items-center">
+        <nav class="relative px-4 py-4 m-2 flex justify-between items-center">
             <a class="text-3xl font-bold leading-none" href="#">
                 <img src="./public/images/whispererofenigma.svg" alt="logo" class="w-60">
             </a>
@@ -81,8 +95,8 @@
         <div class="navbar-backdrop inset-0 bg-gray-800 opacity-25"></div>
         <nav
             class="fixed top-0 rounded-bl-full border-t-2 border-[#dfbb69] right-0 flex flex-col w-full aspect-square backdrop-blur-lg shadow-2xl overflow-y-auto">
-            <div class="flex items-center mb-8">
-                
+            <div class="flex items-center">
+
                 <button class="navbar-close p-2">
                     <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -115,14 +129,15 @@
                     </li>
                 </ul>
             </div>
-           
+
         </nav>
     </div>
     <div class="relative bg-deep-purple-accent-400">
-        <div class="flex justify-center items-center px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 py-20">
-            
+        <div
+            class="flex justify-center items-center h-screen px-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+
             <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
-                <h1 class="mb-6 spectral-regular text-3xl tracking-tight text-white sm:text-4xl sm:leading-none">
+                <h1 class="mb-6 spectral-regular text-3xl tracking-tight text-white sm:text-5xl sm:leading-none">
                     Creativity is the wind<br class="hidden md:block" />
                     in the sails of
                     <span class="relative inline-block">
@@ -134,78 +149,192 @@
                     goes on exploring various fields just out of curiosity and tries to create the blend of tech with
                     everything.
                 </p>
-                
+
             </div>
         </div>
     </div>
-    <div id="scope" class="px-8 relative ">
-        <h2 class="spectral-regular border-b border-[#dfbb69] text-2xl tracking-tight pb-2 text-white mb-6">The <span class="relative inline-block">
-            <span class="relative text-[#dfbb69]">Purpose</span>
-        </span></h2>
+    <div id="scope" class="px-8 relative scroll-element-up ">
+        <h2 class="spectral-regular border-b border-[#dfbb69] text-4xl tracking-tight pb-2 text-white mb-6">The <span
+                class="relative inline-block">
+                <span class="relative text-[#dfbb69]">Purpose</span>
+            </span></h2>
         <div class="md:flex gap-8">
             <div class="basis-2/5 flex w-full overflow-hidden aspect-video rounded-xl mb-4">
-                <img src="./public/images/scope.jpg" alt="Image of a hand pointing at the horizon during sunset" class="h-full w-full object-cover">
+                <img src="./public/images/scope.jpg" alt="Image of a hand pointing at the horizon during sunset"
+                    class="h-full w-full object-cover">
             </div>
             <p class="basis-3/5 mb-6 text-base text-indigo-100 md:text-lg">
-            The purpose of this website is to present a virtual diary where I chronicle my journey, learning, and achievements as I navigate through life. Think of this site as a dynamic canvas reflecting my evolution over time. Here, you'll find snippets of my experiences, milestones, and perhaps a glimpse into future endeavors. Whether it’s a portfolio, a resume, or just a collection of musings, this space is designed to evolve alongside me. Dive in and explore this ever-changing reflection of who I am, and join me as I continue to grow and discover new horizons.
+                The purpose of this website is to present a virtual diary where I chronicle my journey, learning, and
+                achievements as I navigate through life. Think of this site as a dynamic canvas reflecting my evolution
+                over time. Here, you'll find snippets of my experiences, milestones, and perhaps a glimpse into future
+                endeavors. Whether it’s a portfolio, a resume, or just a collection of musings, this space is designed
+                to evolve alongside me. Dive in and explore this ever-changing reflection of who I am, and join me as I
+                continue to grow and discover new horizons.
             </p>
-            
+
+        </div>
+    </div>
+    <div class="relative text-base text-indigo-100 md:text-lg mt-20 px-8 hidden lg:block">
+        <h2 class="spectral-regular border-b border-[#dfbb69] text-4xl tracking-tight pb-2 text-white mb-6 text-right">
+            What's Being<span class="relative inline-block"></span>
+            <span class="relative text-[#dfbb69]">Featured</span>
+            </span>
+        </h2>
+        <div class="grid grid-cols-4 gap-6 px-16">
+            <div 
+                class="grid-item scroll-element-right border-[#dfbb69] border overflow-hidden rounded-xl shadow-xl col-span-2 bg-cover hover:scale-[95%] "
+                style="background-image: url('./public/images/blog.jpg');">
+                <!-- <img src="./public/images/blog.jpg" alt="" class=""> -->
+                <h3
+                    class="text-gray-200 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.55)] drop text-5xl font-black h-[300px] p-6">
+                    Blogs</h3>
+            </div>
+            <div 
+                class="grid-item scroll-element-up border-[#dfbb69] border overflow-hidden rounded-xl shadow-xl bg-cover hover:scale-[95%] "
+                style="background-image: url('./public/images/project.jpg');">
+                <h3
+                    class="text-gray-200 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.55)] drop text-5xl font-black h-[300px] p-6">
+                    Projects</h3>
+            </div>
+            <div
+                class="grid-item scroll-element-left border-[#dfbb69] border rounded-xl p-4 shadow-xl row-span-2 bg-cover bg-[30%_0%] hover:scale-[95%] "
+                style="background-image: url('./public/images/skill.jpg');">
+                <h3
+                    class="text-gray-200 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.55)] drop text-5xl font-black h-[300px] p-6">
+                    Skills</h3>
+            </div>
+            <div 
+                class="grid-item scroll-element-right border-[#dfbb69] hover:scale-[95%] row-span-2 border rounded-xl p-4 shadow-xl bg-cover"
+                style="background-image: url('./public/images/art.jpg');">
+                <h3
+                    class="text-gray-200 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.55)] drop text-5xl font-black h-[300px] p-6">
+                    Art</h3>
+            </div>
+            <div 
+                class="grid-item scroll-element-up border-[#dfbb69] hover:scale-[95%] border col-span-2 rounded-xl p-4 shadow-xl bg-cover"
+                style="background-image: url('./public/images/techcitement.jpg');">
+                <h3
+                    class="text-gray-200 drop-shadow-[0px_0px_8px_rgba(0,0,0,0.55)] drop text-5xl font-black h-[300px] p-6">
+                    Techcitement</h3>
+            </div>
+            <div  class="grid-item scroll-element-up border-[#dfbb69] border rounded-xl p-4 shadow-xl">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laborum dicta nemo explicabo
+                    voluptas, animi, excepturi a voluptate, doloribus commodi odio. In unde et odio ex, iste aspernatur
+                    saepe eius.</p>
+            </div>
+            <div  class="grid-item scroll-element-left border-[#dfbb69] border rounded-xl p-4 shadow-xl">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laborum dicta nemo explicabo
+                    voluptas, animi, excepturi a voluptate, doloribus commodi odio. In unde et odio ex, iste aspernatur
+                    saepe eius.</p>
+            </div>
+            <div  class="grid-item scroll-element-up border-[#dfbb69] border rounded-xl p-4 shadow-xl">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laborum dicta nemo explicabo
+                    voluptas, animi, excepturi a voluptate, doloribus commodi odio. In unde et odio ex, iste aspernatur
+                    saepe eius.</p>
+            </div>
+
+        </div>
+
+        <div class="size-[500px]">
+
         </div>
     </div>
 
-    
+   
 </body>
 
 <script>
-   document.addEventListener('DOMContentLoaded', function () {
-    // Open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
+    document.addEventListener('DOMContentLoaded', function () {
+        // Open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
 
-    if (burger.length && menu.length) {
-        for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.add('active'); // Use 'active' to animate
-                }
-                for (var k = 0; k < backdrop.length; k++) {
-                    backdrop[k].classList.add('active'); // Show backdrop
-                }
-            });
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.add('active'); // Use 'active' to animate
+                    }
+                    for (var k = 0; k < backdrop.length; k++) {
+                        backdrop[k].classList.add('active'); // Show backdrop
+                    }
+                });
+            }
         }
-    }
 
-    // Close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdropClose = document.querySelectorAll('.navbar-backdrop');
+        // Close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdropClose = document.querySelectorAll('.navbar-backdrop');
 
-    if (close.length) {
-        for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.remove('active'); // Remove 'active' to animate out
-                }
-                for (var k = 0; k < backdropClose.length; k++) {
-                    backdropClose[k].classList.remove('active'); // Hide backdrop
-                }
-            });
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.remove('active'); // Remove 'active' to animate out
+                    }
+                    for (var k = 0; k < backdropClose.length; k++) {
+                        backdropClose[k].classList.remove('active'); // Hide backdrop
+                    }
+                });
+            }
         }
-    }
 
-    if (backdropClose.length) {
-        for (var i = 0; i < backdropClose.length; i++) {
-            backdropClose[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.remove('active'); // Remove 'active' to animate out
-                }
-                for (var k = 0; k < backdropClose.length; k++) {
-                    backdropClose[k].classList.remove('active'); // Hide backdrop
-                }
-            });
+        if (backdropClose.length) {
+            for (var i = 0; i < backdropClose.length; i++) {
+                backdropClose[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.remove('active'); // Remove 'active' to animate out
+                    }
+                    for (var k = 0; k < backdropClose.length; k++) {
+                        backdropClose[k].classList.remove('active'); // Hide backdrop
+                    }
+                });
+            }
         }
-    }
+    });
+
+    const observerOptions = {
+    root: null, // viewport
+    rootMargin: '0px',
+    threshold: 0.5 // Trigger when 50% of the element is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Trigger the correct animation based on the element class
+            if (entry.target.classList.contains('scroll-element-up')) {
+                entry.target.classList.add('scroll-animate-up');
+            } else if (entry.target.classList.contains('scroll-element-left')) {
+                entry.target.classList.add('scroll-animate-left');
+            } else if (entry.target.classList.contains('scroll-element-right')) {
+                entry.target.classList.add('scroll-animateup-right');
+            }
+        } else {
+            // Reverse animation ONLY if scrolling upwards
+            if (entry.boundingClientRect.top > 0) {
+                if (entry.target.classList.contains('scroll-element-up')) {
+                    entry.target.classList.remove('scroll-animate-up');
+                } else if (entry.target.classList.contains('scroll-element-left')) {
+                    entry.target.classList.remove('scroll-animate-left');
+                } else if (entry.target.classList.contains('scroll-element-right')) {
+                    entry.target.classList.remove('scroll-animateup-right');
+                }
+            }
+        }
+    });
+}, observerOptions);
+
+// Select all elements that need to be animated
+const elements = document.querySelectorAll('.scroll-element-up, .scroll-element-left, .scroll-element-right');
+
+// Observe each element
+elements.forEach(element => {
+    observer.observe(element);
 });
+
+
 
 
 </script>
