@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -20,9 +20,15 @@
    
 
     <style>
-        .aos-fade {
-            transform: translateZ(0);
-            /* This forces the browser to use GPU */
+        html {
+            scrollbar-width: ; /* Firefox */
+        }
+
+        /* Hide scrollbar for WebKit browsers */
+        html::-webkit-scrollbar {
+            background-color: rgb(248, 208, 50);
+            opacity: 0.3; /* Chrome, Safari */
+            display: none;
         }
     </style>
 
@@ -180,7 +186,7 @@
             <span class="relative text-[#dfbb69]">Featured</span>
             </span>
         </h2>
-        <div class="grid grid-cols-4 gap-6 px-16">
+        <div class="grid grid-cols-4 gap-6 px-8">
             <div 
                 class="grid-item scroll-element-right border-[#dfbb69] border overflow-hidden rounded-xl shadow-xl col-span-2 bg-cover hover:scale-[95%] "
                 style="background-image: url('./public/images/blog.jpg');">
@@ -240,6 +246,7 @@
         </div>
     </div>
 
+    
    
 </body>
 
@@ -296,7 +303,7 @@
 
     const observerOptions = {
     root: null, // viewport
-    rootMargin: '0px',
+    rootMargin: '-50px',
     threshold: 0.5 // Trigger when 50% of the element is visible
 };
 
